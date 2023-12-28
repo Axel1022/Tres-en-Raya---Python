@@ -1,0 +1,250 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/python,windows,macos,linux
+# Editar en https://www.toptal.com/developers/gitignore?templates=python,windows,macos ,linux
+
+### Linux ###
+*~
+
+# archivos temporales que se pueden crear si un proceso todavía tiene un identificador abierto de un archivo eliminado
+.fuse_hidden*
+
+# Preferencias del directorio de KDE
+.directory
+
+# Carpeta de basura de Linux que puede aparecer en cualquier partición o disco
+.Trash-*
+
+# Los archivos .nfs se crean cuando se elimina un archivo abierto pero aún se accede a él
+.nfs*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# El icono debe terminar con dos \r
+Icono
+
+
+# Miniaturas
+._*
+
+# Archivos que pueden aparecer en la raíz de un volumen
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directorios potencialmente creados en un recurso compartido AFP remoto
+. AppleDB
+.AppleDesktop
+Carpeta de papelera de red
+Elementos temporales
+.apdisk
+
+### Parche macOS ###
+# Archivos generados por iCloud
+*.icloud
+
+### Python ###
+# Archivos DLL / optimizados/compilados por bytes
+__pycache__/
+*.py[cod]
+* $py.class
+
+# Extensiones C
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+development-eggs/
+dist/
+downloads/
+egg/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+* .egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+# Generalmente estos archivos se escriben mediante un script de Python a partir de una plantilla
+# antes de que PyInstaller construya el archivo ejecutable, para inyectarle la fecha u otra información.
+*.manifest
+*.spec
+
+# Registros del instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Prueba unitaria/informes de cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+cobertura. xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Traducciones
+*.mo
+*.pot
+
+# Cosas de Django:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Material de Flask:
+instancia/
+.webassets-cache
+
+# Material de Scrapy:
+.scrapy
+
+# Documentación de Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+perfil_default/
+ipython_config.py
+
+# pyenv
+# Para una biblioteca o paquete , es posible que desees ignorar estos archivos ya que el código
+# está pensado para ejecutarse en múltiples entornos; de lo contrario, verifíquelos en:
+# .python-version
+
+# pipenv
+# Según pypa/pipenv#598, se recomienda incluir Pipfile.lock en el control de versiones.
+# Sin embargo, en caso de colaboración, si tiene dependencias específicas de la plataforma o
+# no tiene soporte multiplataforma, pipenv puede instalar dependencias que no funcionan, o no
+# instalar todas las dependencias necesarias.
+#Pipfile.lock
+
+# poesía
+# Similar a Pipfile.lock, generalmente se recomienda incluir poesía.lock en el control de versiones.
+# Esto se recomienda especialmente para paquetes binarios para garantizar la reproducibilidad, y es más
+# comúnmente ignorado para las bibliotecas.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+# Similar a Pipfile.lock, generalmente se recomienda incluir pdm.lock en el control de versiones.
+#pdm.lock
+# pdm almacena configuraciones de todo el proyecto en .pdm.toml, pero se recomienda no incluirlo
+# en el control de versiones.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; utilizado, por ejemplo, por github.com/David-OConnor/pyflow y github.com/pdm-project/pdm
+__pypackages__/
+
+# Cosas de apio
+celerybeat-schedule
+celerybeat.pid
+
+# Archivos analizados por SageMath
+*.sage.py
+
+# Entornos
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuración del proyecto Spyder
+.spyderproject
+.spyproject
+
+# Configuración del proyecto Rope
+.ropeproject
+
+# documentación mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Comprobador de tipo Pyre
+.pyre/
+
+# analizador de tipos estáticos pytype
+.pytype/
+
+# Símbolos de depuración de Cython
+cython_debug/
+
+# PyCharm
+# La plantilla específica de JetBrains se mantiene en un JetBrains.gitignore separado que puede
+# se puede encontrar en https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# y se puede agregar al gitignore global o fusionar en este archivo. Para una
+opción # más nuclear (no recomendada), puede descomentar lo siguiente para ignorar toda la carpeta de ideas.
+#.idea/
+
+### Parche de Python ###
+# Archivo de configuración local de poesía: https://python-poetry.org/docs/configuration/#local-configuration
+poesía.toml
+
+# ruff
+.ruff_cache/
+
+# Archivos de configuración LSP
+pyrightconfig. json
+
+### Windows ###
+# Archivos de caché de miniaturas de Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Archivo de volcado
+*.stackdump
+
+# Archivo de configuración de carpeta
+[Dd]esktop.ini
+
+# Papelera de reciclaje utilizada en archivos compartidos
+$RECYCLE.BIN/
+
+# Archivos de Windows Installer
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Accesos directos de Windows
+*.lnk
+
+# Fin de https://www.toptal.com/developers/gitignore/api/python ,windows,macos,linux
